@@ -36,6 +36,7 @@ group :development, :test do
   gem 'sqlite3' #do ~ end内部に追加。他のgemは残してください。
   gem 'rspec-rails', '~> 4.0.0.beta2'  # 追記
   gem 'rails-controller-testing'  # 追記
+  gem 'rubocop-airbnb'  # 追記
 end
 
 group :development do
@@ -57,6 +58,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :test do
   gem 'webdrivers'  # 追記
+  gem 'capybara'
 end
 
 gem 'devise'  # 追記
+
+gem 'bootstrap-sass'  # Bootstrap用のgemを追加
